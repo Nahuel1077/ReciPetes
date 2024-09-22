@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <h3 className="title">Tell us what ingredients you have and you'll see some tasty recipes below!</h3>
+      <h3 className="title">Tell us what ingredients you have and you will see some tasty recipes below!</h3>
       <div className="container-search">
         <form onSubmit={handleSubmit} className="search">
           <input type="text" value={query} placeholder="Ingredients" id="search" onChange={handleInputChange}></input>
