@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [query, setQuery] = useState("");
@@ -28,7 +29,8 @@ export default function Home() {
 
   return (
     <div className="container">
-      <h3 className="title">Tell us what ingredients you have and you will see some tasty recipes below!</h3>
+      <img src="/img/1.png" alt="background" width="100" height="100" className="background-img"/>
+      <h1 className="title">Tell us what ingredients you have and you will see some tasty recipes below!</h1>
       <div className="container-search">
         <form onSubmit={handleSubmit} className="search">
           <input type="text" value={query} placeholder="Ingredients" id="search" onChange={handleInputChange}></input>
